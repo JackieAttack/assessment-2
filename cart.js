@@ -35,7 +35,7 @@ const cart = [
 
 //CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce((accum, curr) => accum + curr.price, 0)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,8 +54,12 @@ const cart = [
 */
 
 //CODE HERE
-
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    let final = cartTotal * (1 + tax);
+    final -= couponValue;
+    return final
+}
+console.log(calcFinalPrice(20, 5, .06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -79,7 +83,11 @@ const cart = [
 
 /*
     TEXT ANSWER HERE
-
+The customer object could have the following properties:
+Name (string) - This would allow you to personalize messages to them and keep track of who they are.
+Home Address (string) - The customers address could autofill when they are making an order that would deliver to them. This would make it easier for them to make order and we could send promotional material in the mail.
+Email (string) - Can send purchase reciepts via email and email them special offers and other promotional material.
+Total Money Spent (number) - You could offer special deals and bonuses to customers that spend the most money to keep them happy and returning to the restaurant. They are the most valuable customers.
 */
 
 /*
@@ -88,3 +96,9 @@ const cart = [
 */
 
 //CODE HERE
+const customer = {
+    name: 'Jackie Bearnson',
+    address: '1234 Somewhere, UT',
+    email: 'Jackie.bearnson@gmail.com',
+    totalSpent: 345
+}
