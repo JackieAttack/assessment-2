@@ -2,3 +2,7 @@ figma Link:
 https://www.figma.com/file/lEvxscGsPQViGppWqN6YGU/Untitled?node-id=0%3A1
 Restaurant Name: Jackie's Shack
 
+Software companies Research:
+Amazon: Java, C++, or C# including object-oriented design, AWS technologies.
+Google: Java, C/C++, Python, JavaScript, or Go. APIs, Stack Overflow
+Vizient:Microsoft Excel, Access, SQL Server
